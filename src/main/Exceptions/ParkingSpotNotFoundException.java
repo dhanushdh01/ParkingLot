@@ -1,4 +1,11 @@
 package main.Exceptions;
 
-public class ParkingSpotNotFoundException {
+public class ParkingSpotNotFoundException extends RuntimeException {
+    public ParkingSpotNotFoundException(){
+
+    }
+
+    public ParkingSpotNotFoundException(String message){
+        super(message);
+    }
 }

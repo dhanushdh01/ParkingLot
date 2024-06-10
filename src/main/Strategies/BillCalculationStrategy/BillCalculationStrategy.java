@@ -1,4 +1,8 @@
 package main.Strategies.BillCalculationStrategy;
 
-public class BillCalculationStrategy {
+import main.Models.Bill;
+import main.Models.Ticket;
+
+public interface BillCalculationStrategy {
+    Bill generateBill(Ticket ticket);
 }
